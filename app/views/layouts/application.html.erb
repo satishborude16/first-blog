@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= render "/shared/metatags" %>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet" />
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

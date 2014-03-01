@@ -1,0 +1,14 @@
+<table>
+	<tr><td><%= link_to "New", new_user_path %>
+	<tr><td>ID<td>Name<td>Email<td>Phone<td>City<td>Age<td>Actions
+	<% @users.each do |user| %>
+	<tr>
+		<td><%= user.id %>
+		<td><%= user.name %>
+		<td><%= user.email %>
+		<td><%= user.phone %>
+		<td><%= user.city %>
+		<td><%= user.age %>
+		<td><%= link_to "Edit", edit_user_path(user) %> &nbsp <%= link_to "Delete", user_path(user), method: :delete %>
+	<% end %>
+</table>
